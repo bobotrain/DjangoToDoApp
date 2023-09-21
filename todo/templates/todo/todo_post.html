@@ -15,10 +15,11 @@
                 <div class="col-md-12">
                     <div class="card">
                         <div class="card-body">
-                          <from method="POST">
-                            {% csrf_token %} {{ form.as_p }}
+                          <form method="POST">
+                            {% csrf_token %}
+                            {{ form.as_p }}
                             <button type="submit" class="btn btn-primary">등록</button>
-                          </from>
+                          </form>
                         </div>
                     </div>
                 </div>
